@@ -3,10 +3,20 @@ import React, { useEffect } from "react";
 
 import Link from "next/link";
 
+import LogoSlider from "@/components/LogoSlider";
+
 import { ArrowUpRight01Icon } from "hugeicons-react";
 
 import Lenis from "lenis";
 import ScrollingNumber from "@/components/ScrollingNumber";
+
+const logos: string[] = [
+  "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+];
 
 const Home = () => {
   useEffect(() => {
@@ -64,23 +74,59 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="relative w-full h-[100vh] px-6 py-3">
-        <div className="">
-          <div className="flex items-start justify-center flex-col mt-6">
-            <ScrollingNumber value={10000} duration={1.5} />
-            <p className="text-sm">Talents</p>
+      <section className="relative w-full px-6 py-3">
+        <h2 className="text-center text-4xl leading-none font-bold mt-16">
+          What We Do?
+        </h2>
+        <div className="flex flex-col gap-y-4 mt-8">
+          <div className="flex items-center gap-x-8 px-6 py-4 rounded-xl bg-gradient-to-r from-[#11105e] to-[#0140ff] text-white">
+            <div>
+              <p className="font-semibold text-3xl">#1. Identify</p>
+              <p>
+                GOVOKASi memberdayakan talenta untuk menemukan dan
+                mengoptimalkan potensi penuh mereka.
+              </p>
+            </div>
           </div>
-          <div className="flex items-start justify-center flex-col ">
-            <ScrollingNumber value={15} duration={1.5} />
-            <p className="text-sm">Placement Locations</p>
+          <div className="flex items-center gap-x-8 px-6 py-4 rounded-xl bg-gradient-to-r from-[#0140ff] to-[#00a0fe] text-white">
+            <div>
+              <p className="font-semibold text-3xl">#2. Develop</p>
+              <p>
+                GOVOKASi memberdayakan talenta untuk meraih karier impian mereka
+                melalui pelatihan dan pembinaan berkelanjutan.
+              </p>
+            </div>
           </div>
-          <div className="flex items-start justify-center flex-col ">
-            <ScrollingNumber value={150} duration={1.5} />
-            <p className="text-sm">Company Partners</p>
+          <div className="flex items-center gap-x-8 px-6 py-4 rounded-xl bg-gradient-to-r from-[#00a0fe] to-[#fddc57] text-white">
+            <div>
+              <p className="font-semibold text-3xl">#3. Promote</p>
+              <p>
+                GOVOKASi memberdayakan talenta dengan menghubungkan mereka ke
+                perusahaan mitra untuk mewujudkan karier impian..
+              </p>
+            </div>
           </div>
-          <div className="flex items-start justify-center flex-col ">
-            <ScrollingNumber value={10} duration={1.5} />
-            <p className="text-sm">Various Industries</p>
+        </div>
+      </section>
+      <section className="relative w-full h-[100vh] px-6 py-3 mt-6">
+        <div className="flex items-center mt-16">
+          <div className="bg-gradient-to-r from-[#11105e] to-[#0140ff] bg-clip-text text-transparent ">
+            <div className="flex items-start justify-center flex-col ">
+              <ScrollingNumber value={10000} duration={1.5} />
+              <p className="text-sm">Talents</p>
+            </div>
+            <div className="flex items-start justify-center flex-col mt-4">
+              <ScrollingNumber value={15} duration={1.5} />
+              <p className="text-sm">Placement Locations</p>
+            </div>
+            <div className="flex items-start justify-center flex-col mt-4">
+              <ScrollingNumber value={150} duration={1.5} />
+              <p className="text-sm">Company Partners</p>
+            </div>
+            <div className="flex items-start justify-center flex-col mt-4">
+              <ScrollingNumber value={10} duration={1.5} />
+              <p className="text-sm">Various Industries</p>
+            </div>
           </div>
         </div>
       </section>
