@@ -14,6 +14,8 @@ export const metadata: Metadata = {
     "Govokasi connects young talent with top companies for skill-based internships, training, and career coaching to foster professional growth. Offering curated programs and mentoring in diverse fields, Govokasi empowers career seekers with hands-on experience and industry connections. Trusted by leading Indonesian companies, Govokasi supports career transitions and skills enhancement through comprehensive, quality internships.",
 };
 
+import NavBar from "@/components/header/NavBar";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`}>{children}</body>
+      <body className={`${poppins.className} antialiased relative w-full`}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
