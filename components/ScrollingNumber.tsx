@@ -70,7 +70,7 @@ const ScrollingNumber: React.FC<ScrollingNumberProps> = ({
   }, [isVisible, value, duration]);
 
   return (
-    <motion.div ref={countRef} className="text-5xl font-bold">
+    <motion.div ref={countRef} className="text-7xl font-bold text-center">
       {`+${value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`}
     </motion.div>
   );
