@@ -171,7 +171,7 @@ const Home = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
-          className="absolute bottom-0 left-0"
+          className="absolute bottom-0 left-0 w-full"
         >
           <path
             fill="#0a3fa9"
